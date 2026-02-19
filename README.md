@@ -53,16 +53,22 @@
 .envファイルに以下を設定してください。
 
 DB_CONNECTION=mysql
+
 DB_HOST=mysql
+
 DB_PORT=3306
+
 DB_DATABASE=laravel_db
+
 DB_USERNAME=laravel_user
+
 DB_PASSWORD=laravel_pass
+
 
 
 ※vendorディレクトリはGit管理していません。初回起動時は必ず以下を実行してください。
 
-composer install
+・composer install
 
 
 
