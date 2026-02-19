@@ -5,30 +5,53 @@
 ⚪︎環境構築
 
 ##Dockerビルド
+
 １、リポジトリをクローン
+
 ・git clone https://github.com/nagika0000-code/test.git
+
 ・cd test
 
+
 ２、Dockerコンテナを起動
+
 ・docker-compose up -d --build
 
+
 ３、PHPコンテナへ入る
+
 ・docker compose exec php bash
 
+
+
 ４、Composerインストール
+
 ・composer install
 
+
+
 ５、.envファイル作成
+
 ・cp .env.example .env
 
+
+
 ６、アプリケーションキー生成
+
 ・php artisan key:generate
 
+
+
 ７、データベースマイグレーション実行
+
 ・php artisan migrate --seed
 
+
+
 ⚪︎DB設定
+
 .envファイルに以下を設定してください。
+
 DB_CONNECTION=mysql
 DB_HOST=mysql
 DB_PORT=3306
@@ -36,8 +59,12 @@ DB_DATABASE=laravel_db
 DB_USERNAME=laravel_user
 DB_PASSWORD=laravel_pass
 
+
 ※vendorディレクトリはGit管理していません。初回起動時は必ず以下を実行してください。
+
 composer install
+
+
 
 ##開発環境
 
