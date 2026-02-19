@@ -6,6 +6,7 @@ return [
     'email' => ':attribute の形式が正しくありません。',
     'max' => ['string' => ':attribute は :max 文字以内で入力してください。',],
     'digits_between' => ':attribute は :min 桁〜:max 桁の数字で入力してください。',
+    'unique' => ':attribute は既に登録されています。',
 
      'attributes' => [
         'last_name' => '姓',
